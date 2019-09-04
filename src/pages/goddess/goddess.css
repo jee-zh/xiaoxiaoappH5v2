@@ -1,0 +1,428 @@
+html,body{
+  background:#0F0D26;
+  letter-spacing: 1px;
+}
+.goddess-wrapper{
+  background:url('../../images/goddess-top-banner.png') top center no-repeat;
+  background-size:contain;
+  position:relative;
+}
+.rules{
+  position: absolute;
+  left:8px;
+  top:0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width:40px;
+  height:45px;
+  font-size:12px;
+  color:rgba(255,255,255,0.8);
+  background:-webkit-gradient(linear, left top, left bottom, from(#463d5b), to(#403d53));
+  background:-o-linear-gradient(top, #463d5b, #403d53);
+  background:linear-gradient(to bottom, #463d5b, #403d53);
+  border-radius:0 0 18px 18px;
+  z-index:20;
+}
+.rules span{
+  display: block;
+  line-height: 1;
+  margin-top:2px;
+  position: relative;
+  top:-2px;
+}
+.goddess-details-box{
+  margin:0 12px;
+  padding:0 18px 34px 18px;
+  background:-webkit-gradient(linear,left top, left bottom,from(rgba(15,13,38,1)),to(rgba(36,46,75,1)));
+  background:-o-linear-gradient(top,rgba(15,13,38,1),rgba(36,46,75,1));
+  background:linear-gradient(180deg,rgba(15,13,38,1),rgba(36,46,75,1));
+  border-radius:8px;
+  position: relative;
+  top:5.4rem;
+}
+.goddess-top-icon{
+  position:absolute;
+  left:-12px;
+  top:-1.49rem;
+  width:1.82rem;
+  height:2.22rem;
+  background:url('../../images/goddess-pic_qian.png') no-repeat;
+  background-size:cover;
+}
+.goddess-title{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding:34px 0 18px 0;
+  font-size: 20px;
+  color:#01FF96;
+  font-weight: 600
+}
+.goddess-title:before,.goddess-title:after{
+  content:'';
+  display: block;
+  width:20px;
+  height: 10px;
+  background:url('../../images/goddess-ic_biaoti.png') no-repeat;
+  background-size: 20px 10px;
+}
+.goddess-title:before{
+  margin-right:12px;
+}
+.goddess-title:after{
+  margin-left:12px;
+}
+.goddess-title span{
+  color:#fff;
+}
+.goddess-infos{
+  padding: 15px 10px;
+  border:1px solid #5546ea;
+  border-radius:8px;
+  position: relative;
+}
+.goddess-infos:before{
+  position: absolute;
+  top:-14px;
+  right:64px;
+  content:'';
+  width:20px;
+  height:14px;
+  background:url(../../images/sanjiao.png) no-repeat;
+  background-size:cover;
+  background-color:rgba(15,13,38,1);
+}
+.goddess-infos .infos-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom:8px;
+  line-height:16px;
+  font-size: 14px;
+  color:#fff;
+  opacity: 0.8;
+  /* white-space: nowrap; */
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+}
+.goddess-infos .infos-list:last-child{
+  margin:0;
+}
+.goddess-infos .infos-list .order{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width:28px;
+  height:28px;
+  font-size:20px;
+  color:#de4e28;
+  border:2px solid #de4e28;
+  border-radius:50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 28px;
+          flex: 0 0 28px;
+  transform:scale(0.5);
+  transform-origin: center;
+  position:relative;
+  top:-1px;
+}
+.user-money-box{
+  margin-top:28px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding:0 10px;
+}
+.user-money-box .money-box{
+  overflow: hidden;
+  width:2.6rem;
+  height:1.8rem;
+  background:url('../../images/goddess-pic_daishen.png') no-repeat;
+  background-size:cover;
+  position: relative;
+}
+.user-money-box .money-box:nth-child(2){
+  background:url('../../images/goddess-pic_yihuo.png') no-repeat;
+  background-size:cover;
+}
+.user-money-box .money-box .box{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  height:1.26rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 32px;
+  color:#01FF96;
+  font-weight: bold;
+}
+.user-money-box .money-box .init{
+  font-size:22px;
+  position: relative;
+  font-weight: 500;
+  bottom:-6px;
+  left:-2px;
+}
+.more-data{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin:12px 0 23px 0;
+  padding:0 10px;
+  font-size: 14px;
+  color:#fff;
+}
+.more-data .failed-data{
+  opacity: 0.5;
+}
+.more-data .mine-video{
+  color:#fff;
+  opacity: 0.8;
+}
+.button{
+  margin: 0 10px;
+  text-align: center;
+  line-height: 48px;
+  height:48px;
+  background:-webkit-gradient(linear,left top, left bottom,from(rgba(92,238,171,1)),to(rgba(1,196,208,1)));
+  background:-o-linear-gradient(top,rgba(92,238,171,1),rgba(1,196,208,1));
+  background:linear-gradient(180deg,rgba(92,238,171,1),rgba(1,196,208,1));
+  border-radius:24px;
+  font-weight:bold;
+  font-size: 18px;
+  color:#fff;
+  text-shadow:0px 2px 0px rgba(6,103,104,0.2);
+}
+.goddess-methods{
+  margin: 25px 12px 0 12px;
+  padding: 0 18px 34px 18px;
+  background: #242e4b;
+  border-radius: 8px;
+  position: relative;
+  top:5.4rem;
+}
+.goddess-methods .methods-text{
+  margin:4px 0 20px 0;
+  font-size: 14px;
+  color:#fff;
+  font-weight:500;
+  line-height:24px;
+  opacity: 0.8;
+}
+.goddess-methods .QQ-box{
+  margin-bottom:24px;
+  height:62px;
+  background:-webkit-gradient(linear,left top, right top,from(rgba(90,9,114,0.75)),to(rgba(22,83,72,0.75)));
+  background:-o-linear-gradient(left,rgba(90,9,114,0.75),rgba(22,83,72,0.75));
+  background:linear-gradient(90deg,rgba(90,9,114,0.75),rgba(22,83,72,0.75));
+  border-radius:8px;
+  padding:13px 15px;
+}
+.goddess-methods .QQ-box .QQ-info{
+  height:36px;
+  background:url('../../images/goddess-QQ.png') left center;
+  background-size:30px 36px;
+  background-repeat: no-repeat;
+  padding-left:38px;
+  line-height: 36px;
+  font-size: 14px;
+  color:#fff;
+  font-weight:500;
+}
+.goddess-methods .QQ-box{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.goddess-methods .QQ-box .copy{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding:0 20px;
+  height:24px;
+  background:-webkit-gradient(linear,left top, right top,from(rgba(92,238,171,0.2)),to(rgba(49,218,189,0.2)));
+  background:-o-linear-gradient(left,rgba(92,238,171,0.2),rgba(49,218,189,0.2));
+  background:linear-gradient(90deg,rgba(92,238,171,0.2),rgba(49,218,189,0.2));
+  color:rgba(255,255,255,0.8);
+  font-size: 12px;
+  font-weight:500;
+  border-radius:12px;
+}
+.footer{
+  position: relative;
+  padding:22px 0 60px 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight:500;
+  color:#37A276;
+  top:5.4rem;
+}
+#copyInput{
+  opacity: 0;
+  position: relative;
+  z-index:-1;
+}
+.popup-mask{
+  display:none;
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.7);
+  z-index:30
+}
+.popup{
+  position:fixed;
+  left:50%;
+  top:50%;
+  -webkit-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
+  width:77.33%;
+  background:#fff;
+  border-radius:8px;
+  padding:0 16px .6rem 16px;
+}
+.popup .goddess-title{
+  font-size:20px;
+  color:#FF5927
+}
+.popup .goddess-title:before,.popup .goddess-title:after{
+  background:url('../../images/goddess-pic_hong.png') no-repeat;
+  background-size: 20px 10px;
+}
+.popup-details{
+  font-size:14px;
+  color:#555;
+  max-yheight:300px;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.popup-details li{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  margin-bottom:6px;
+  font-weight:500;
+  line-height:20px;
+}
+.popup-details li .order{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* margin-right: 5px; */
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  line-height:1;
+  color: #de4e28;
+  border: 2px solid #de4e28;
+  border-radius: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36px;
+          flex: 0 0 36px;
+  position:relative;
+  top:-6px;
+  letter-spacing:0;
+  transform:scale(0.5);
+  transform-origin: center
+}
+.popup-close{
+  position:absolute;
+  top:0px;
+  right:0px;
+  width:48px;
+  height:48px;
+  background:url('../../images/goddess-popup-close.png') no-repeat center;
+  background-size:24px;
+}
+.animation{
+  -webkit-animation:fadeInUp 0.5s .1s ease both;
+  animation:fadeInUp 0.5s .1s ease both;
+}
+@keyframes fadeInUp{
+  0% {
+    opacity:0;
+    -webkit-transform:translate(-50%,-44%);
+            transform:translate(-50%,-44%)
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:translate(-50%,-50%);
+            transform:translate(-50%,-50%)
+  }
+}
+@-webkit-keyframes fadeInUp{
+  0% {
+    opacity:0;
+    -webkit-transform:translate(-50%,-44%);
+    transform:translate(-50%,-44%)
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%)
+  }
+}

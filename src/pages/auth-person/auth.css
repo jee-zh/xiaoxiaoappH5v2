@@ -1,0 +1,147 @@
+/* 提现 */
+input::-webkit-input-placeholder{
+  color:#BEBEBE;
+}
+html,body{
+  height:100%;
+  background:#f7f7f7;
+  
+}
+.main{
+  padding-bottom:14px;
+  background:#fff;
+}
+.main .list{
+  padding:0 16px;
+}
+.main .list-enter{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height:49px;
+}
+.main .list-enter label{
+  display: block;
+  -webkit-box-flex:0;
+  -webkit-flex:0 0 75px;
+      -ms-flex:0 0 75px;
+          flex:0 0 75px;
+  width:75px;
+  font-size:14px;
+  font-weight:400;
+  color:#333;
+}
+.main .list-enter input{
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+      -ms-flex:1;
+          flex:1;
+  height:49px;
+  line-height:49px;
+  font-size:14px;
+  font-family: '微软雅黑'
+}
+.main .list-phone label{
+  height:49px;
+  line-height:49px;
+  font-size:14px;
+  font-weight:400;
+  color:#333;
+}
+.main .upload_box{
+  overflow: hidden;
+  width:180px;
+  height: 108px;
+  border-radius: 2px;
+  border: 1px solid rgba(236,236,236,1);
+  position: relative;
+}
+.upload_box .image,.upload_box button{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+.upload_box .image {
+  display: none;
+  height: 100%;
+}
+.upload_box .desc{
+  /* z-index:2; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  height:25px;
+  line-height:25px;
+  text-align: center;
+  background:rgba(240,223,223,.3);;
+  font-size:12px;
+  color:#333;
+  font-weight:500
+}
+.upload_box button {
+  background:none;
+  font-size: 12px;
+  color: #999;
+  font-family: '微软雅黑'
+}
+/* .upload_box button:before {
+  display: block;
+  margin:0 auto 4px auto;
+  content: "";
+  width:30px;
+  height:30px;
+  background:url('../../images/add.png') no-repeat;
+  background-size:cover;
+} */
+.upload_box .uploaded{
+  opacity:0
+}
+#choiceBefore{
+  background:url('../../images/card_2@2x.png') no-repeat center 6px;
+  background-size:120px 70px;
+}
+#choiceAfter{
+  background:url('../../images/card_1@2x.png') no-repeat center 6px;
+  background-size:120px 70px;
+}
+.area{
+  padding:28px 16px 35px 16px;
+  
+}
+.area .button{
+  display:block;
+  width:100%;
+  height:42px;
+  font-size:16px;
+  color:#fff;
+  background:rgba(254,105,98,0.94);
+  border-radius:22px;
+  font-family: '微软雅黑'
+}
+.area .disabledClick{
+  background:rgba(254,105,98,0.4);
+}
+.area .jump{
+  display: block;
+  padding-top:17px;
+  text-align: center;
+  text-decoration: underline;
+  font-size:13px;
+  font-weight:400;
+  color:#333;
+}

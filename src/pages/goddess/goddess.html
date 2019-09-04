@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <script>
+  !function(window) {
+    var docWidth = 750;
+    var doc = window.document
+      , docEl = doc.documentElement
+      , resizeEvt = 'orientationchange'in window ? 'orientationchange' : 'resize';
+    var recalc = (function refreshRem() {
+        var clientWidth = docEl.getBoundingClientRect().width;
+        docEl.style.fontSize = Math.max(Math.min(20 * (clientWidth / docWidth), 11.2), 8.55) * 5 + 'px';
+        return refreshRem;
+    }
+    )();
+    docEl.setAttribute('data-dpr', window.navigator.appVersion.match(/iphone/gi) ? window.devicePixelRatio : 1);
+    if (/iP(hone|od|ad)/.test(window.navigator.userAgent)) {
+        doc.documentElement.classList.add('ios');
+        if (parseInt(window.navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8)
+            doc.documentElement.classList.add('hairline');
+    }
+    ;if (!doc.addEventListener)
+        return;
+    window.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+}(window);
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>女神招募令</title>
+</head>
+<body>
+<section class="goddess-wrapper">
+  <div class="rules"><span>活动</span><span>规则</span></div>
+  <section class="goddess-details-box">
+    <div class="goddess-top-icon"></div>
+    <div class="goddess-title">如何秒赚166元?</div>
+    <div class="goddess-infos">
+      <div class="infos-list"><span class="order">1</span>上传高清、高颜值的靓女类优秀视频</div><div class="infos-list"><span class="order">2</span>客服小姐姐在线审核、推荐视频</div><div class="infos-list"><span class="order">3</span>视频成功被推荐，奖励实时到账~</div>
+    </div>
+    <div class="user-money-box">
+      <div class="money-box"><div class="box"><span class='init'>¥</span><span id="waitMoney">0</span></div></div>
+      <div class="money-box"><div class="box"><span class="init">¥</span><span id="sucMoney">0</span></div></div>
+    </div>
+    <div class="more-data">
+      <div class="failed-data">获取失败：¥<span id="failMoney">0</span></div>
+      <div class="mine-video">我的视频></div>
+    </div>
+    <div class="upload-btn button">立即上传视频</div>
+  </section>
+  <section class="goddess-methods">
+    <div class="goddess-title">如何获得<span>翻倍奖励</span></div>
+    <p class="methods-text">进入下方福利群,获得金额翻倍攻略,天天提现！更有优先推荐曝光权,活动消息早班车等福利！</p>
+    <div class="QQ-box">
+      <div class="QQ-info">
+        512094115
+      </div>
+      <span class="copy" id="copy" data-clipboard-target="#copyInput">复制群号</span>
+    </div>
+    <div class="open-btn button">去领钱</div>
+  </section>
+  <footer class="footer">本活动最终解释权由爆米花科技股份有限公司所有</footer>
+  <input type="text" value="512094115" id="copyInput">
+  <div class="popup-mask">
+    <div class="popup animation">
+        <div class="goddess-title">活动规则</div>
+        <div class="popup-close"></div>
+        <div class="popup-details">
+          <ul>
+            <li><span class="order">1</span>活动期间，用户上传视频符合平台审核标准、入选推荐池即获得0.66-16.88元现金红包，活动期间首次上传并被推荐必得18元红包。现金在作品被推荐后即存入小小视频钱包，用户获得的红包可按照平台规则提现至微信。</li>
+            <li><span class="order">2</span>用户上传视频符合平台标准并被工作人员推荐后，相应奖励金额即时到账，未被推荐视频无奖金。</li>
+            <li><span class="order">3</span>用户加入小小视频核心用户QQ群并完成相应指定任务并通过审核后，用户该作品所获奖励红包价值翻倍（首次上传奖励不可翻倍），奖励金额由工作人员直接打入用户小小视频账户，奖励金在过审后3日内入账。</li>
+            <li><span class="order">4</span>每个用户最多可累积获得166元活动奖金，同一个登录账号、同一个手机号、同一个设备或同一提现账户均被视为同一个用户。</li>
+            <li><span class="order">5</span>禁止用户以任何不正当手段及舞弊行为参与本活动，一经发现，小小视频有权撤销该用户参与活动的资格，并有权收回、追讨用户已经获得的提现金额。并保留追究该用户责任的权利。不正当手段及舞弊行为包括但不限于：下载非官方客户端；使用模拟器、插件、外挂等非法工具扫码、下载、安装、注册、登录、提现；注册多个账号；篡改设备数据，伪造成用户；扰乱平台秩序、使用插件、外挂、系统或第三方工具对“小小视频”客户端及本活动进行干扰、破坏、修改或施加其他影响及小小视频自主判定的其他不正当手段。</li>
+            <li><span class="order">6</span>用户应遵守法律法规、公序良俗等，不得违反小小视频的用户协议、隐私政策及其他相关活动规则及规定，共同打造清朗有序的互联网空间。</li>
+            <li><span class="order">7</span>小小视频依法运营此次活动，如因不可抗力、相关政策、活动调整等原因导致本次活动调整、暂停举办或无法进行的，小小视频有权随时决定修改、暂停、取消或终止本活动，小小视频无需为此承担任何法律责任。</li>
+            <li><span class="order">8</span>如因第三方通过各种不当手段攻击、篡改对小小小视频客户端及本活动进行干扰、破坏、修改或施加其他影响或小小视频系统故障，导致获得火力、提现发生错误，或用户无法参与或参与失败的，小小视频无需为此承担任何法律责任。</li>
+            <li><span class="order">9</span>活动期间，因用户操作不当或用户所在地区网络故障、支付平台网络故障、电信运营商故障等非小小视频所能控制的原因导致的用户无法参与活动、或参与失败，小小视频无需为此承担任何法律责任。</li>
+            <li><span class="order double">10</span>请用户务必通过小小视频手机官方客户端参与本次活动。任何人或第三方以小小视频的名义宣称或从事类似活动或而已通知用户中奖、领取红包或欺诈赠与，造成用户损失的，小小视频无需为此承担任何法律责任。</li>
+            <li><span class="order double">11</span>您随时有权查看本活动规则，在法律允许的范围内，对本活动规则进行变动或调整，相关变动或调整将公布在活动规则页面上，并于公布时即时生效，用户继续参与该活动则视为同意前述变动或者调整的活动规则。如果用户拒绝上述活动规则的变更或者调整，则可以选择放弃参与变动后的该活动。</li>
+            <li><span class="order double">12</span>该活动最终解释权由杭州爆米花科技股份有限公司所有。</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</section>
+<script src="http://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+</body>
+
+</html>
